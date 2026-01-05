@@ -1,0 +1,7 @@
+
+{{ define "title" }}{{ .Title }}{{ end }}
+{{ define "main" }}
+<!-- <h1>{{ .Title }}</h1>-->
+{{ with .Params.subtitle }}<p class="subtitle">{{ . }}</p>{{ end }}
+<div class="content">{{ .Content }}</div>
+{{ end }}

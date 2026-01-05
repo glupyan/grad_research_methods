@@ -1,0 +1,300 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="icon" href="/images/icon.png">
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+  header{background:#111;color:#fff;padding:14px 20px}
+  header a{color:#fff;text-decoration:none;margin-right:18px}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  nav ul{list-style:none;padding:0;margin:0;display:flex;gap:16px}
+  nav li{margin:0}
+  footer{border-top:1px solid #eee;color:#666;padding:16px 20px;font-size:14px}
+  h1,h2,h3{line-height:1.2}.subtitle{color:#555}.postlist li{margin:8px 0}pre code{white-space:pre-wrap}a{color:#0a58ca}
+  img{max-width:100%;height:auto;border-radius:4px}
+   
+  .hero{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+  .hero img{display:block;width:100vw;height:auto;border-radius:0}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover p{margin:0;line-height:1.35}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover .cite-copy{background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+  .cite-popover .cite-copy:hover{background:#eee}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+ 
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-toggle{display:none;align-items:center;justify-content:center;gap:4px;width:40px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:#fff;cursor:pointer}
+  .nav-toggle span{display:block;width:18px;height:2px;background:#fff}
+  header nav ul{display:flex;gap:16px;align-items:center;margin:0;padding:0;list-style:none}
+  header nav li{list-style:none;margin:0}
+  .cite-popover{padding:12px 18px 12px 14px}
+  .cite-popover .cite-body{padding-right:24px}
+  .cite-popover .cite-close{top:8px;right:10px}
+  @media (max-width: 768px){
+    .wrap{padding:16px 16px 0 16px}
+    header nav ul{
+      display:block;
+      overflow:hidden;
+      max-height:0;
+      transition:max-height .22s ease;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+      margin-top:12px
+    }
+    header.nav-open nav ul{ max-height:500px }
+    .nav-toggle{display:inline-flex}
+    .cite-popover{left:16px !important; right:16px; max-width:calc(100vw - 32px)}
+  }
+
+   
+  header, header .wrap, header nav, header nav ul{
+    margin-bottom:5 !important;
+    padding-bottom:10 !important;
+  }
+  main.wrap{padding-top:0 !important;}
+  main.wrap > *:first-child{margin-top:0 !important;}
+  .hero{margin-top:0 !important; padding-top:0 !important; line-height:0;}
+  .hero img{display:block; width:100%; height:auto;}
+
+</style></head><body>
+<header><div class="wrap">
+  <strong>Psych 711: Cognitive Science of Large Language Models. Fall, 2025</strong>
+  
+<button class="nav-toggle" aria-controls="site-nav" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav id="site-nav" style="float:right;"><ul>
+    <li><a href="/">Home</a></li><li><a href="/schedule/">Schedule</a></li><li><a href="/logistics/">Logistics</a></li><li><a href="/resources/">Resources</a></li>
+  </ul></nav><div style="clear:both;"></div>
+</div></header>
+<main class="wrap">
+<article>
+  <h1></h1>
+  
+  <div class="content"><h1 id="class-schedule">Class Schedule<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h1>
+<p>I recommend reading the papers in the order in which they are listed.</p>
+<h1 id="r-advdatewed-1"><code>r advdate(wed, 1)</code></h1>
+<h3 id="what-is-learnable">What is learnable?</h3>
+<ul>
+<li><strong>Readings (in class):</strong> @suttonBitterLesson2019; @WhatIntelligenceAntikythera;</li>
+<li><em>Related resources</em>: @halevyUnreasonableEffectivenessData2009; <a href="https://youtube.com/watch?v=R7qy2BY6mTk&amp;list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&amp;index=32&amp;pp=iAQB">talk by Alyosha Efros</a></li>
+</ul>
+<h1 id="r-advdatewed-2"><code>r advdate(wed, 2)</code></h1>
+<h3 id="how-do-llms-work">How do LLMs work?</h3>
+<ul>
+<li><strong>Readings:</strong> @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022.</li>
+<li><strong>Other resources for understanding transformers (very useful; strongly recommended!)</strong>:
+<a href="https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com">The illustrated transformer</a>; <a href="https://www.youtube.com/watch?v=wjZofJX0v4M&amp;ab_channel=3Blue1Brown">Transformers, the tech behind LLMs video</a> and the <a href="https://www.youtube.com/watch?v=eMlx5fFNoYc&amp;ab_channel=3Blue1Brown">next chapter focusing on attention</a>;</li>
+<li>Extra: @mccoyEmbersAutoregressionShow2024</li>
+</ul>
+<h1 id="r-advdatewed-3"><code>r advdate(wed, 3)</code></h1>
+<h3 id="learning-language-from-language">Learning language from language</h3>
+<p><strong>Special guest</strong> - Steven Piantadosi</p>
+<ul>
+<li><strong>Readings:</strong> @elman_finding_1990; @boleda_distributional_2020; @piantadosiModernLanguageModels2024</li>
+</ul>
+<h1 id="r-advdatewed-4"><code>r advdate(wed, 4)</code></h1>
+<h3 id="learning-about-the-world-from-language">Learning about the world from language</h3>
+<p><strong>Special guest</strong> - Marina Bedny</p>
+<ul>
+<li>
+<p><strong>Readings:</strong> <a href="https://scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf">Plato: The allegory of the cave</a>; @lupyan_words-as-mappings_2017; @yildirimTaskStructuresWorld2024; @wangConstructingMeaningLanguageforthcoming</p>
+</li>
+<li>
+<p>Recommended: response to Yildirim and Paul: @godduLLMsDontKnow2024; Counter-response: @yildirimResponseGodduNew2024</p>
+</li>
+</ul>
+<h1 id="r-advdatewed-5"><code>r advdate(wed, 5)</code></h1>
+<h3 id="do-large-language-models-understand-us">Do large language models understand us?</h3>
+<ul>
+<li><strong>Readings:</strong> @mitchell_debate_2023; @aguerayarcasLargeLanguageModels2022; @piantadosi_meaning_2022</li>
+<li><strong>Short reflection essay</strong>: So what do you think? Do large language models understand us? (~800 words).</li>
+<li>Extra: Feel free to also browse the talks in <a href="https://skywritingspress.ca/">this series organized by Stevan Harnad</a>, e.g., the <a href="https://www.youtube.com/watch?v=yyRzTL201zI&amp;list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&amp;index=24&amp;pp=iAQB">different kinds of understanding by Chalmers</a>.</li>
+</ul>
+<h1 id="r-advdatewed-6"><code>r advdate(wed, 6)</code></h1>
+<h3 id="stress-testing-embodiment">Stress testing embodiment</h3>
+<ul>
+<li>Lots of reading this week!</li>
+<li><strong>Readings:</strong> @barsalou_perceptual_1999; @mollo_vector_2023; @pavlickSymbolsGroundingLarge2023</li>
+<li>Extra: <a href="https://philpapers.org/archive/CHADTR.pdf">A philosophical take by David Chalmers on the possibility of &ldquo;pure thinkers&rdquo;</a></li>
+</ul>
+<h1 id="r-advdatewed-7"><code>r advdate(wed, 7)</code></h1>
+<h3 id="stress-testing-the-language-of-thought-hypothesis-learning-to-learn-and-represent">Stress testing the language of thought hypothesis: learning to learn and represent</h3>
+<ul>
+<li><strong>Readings:</strong> @quilty-dunn_best_2022 (also read at least 2 positive and 2 negative commentaries); @lakeHumanlikeSystematicGeneralization2023; Watch <a href="https://www.youtube.com/watch?v=6gSYMX3I5Bs&amp;ab_channel=KempnerInstituteatHarvardUniversity">this talk on learning compositionality by Pavlick</a></li>
+<li>Extra: @griffithsWhitherSymbolsEra2025; @binzMetalearnedModelsCognition2024;</li>
+</ul>
+<h1 id="r-advdatewed-8"><code>r advdate(wed, 8)</code></h1>
+<h3 id="stress-testing-numerical-cognition">Stress testing numerical cognition</h3>
+<ul>
+<li><strong>Readings:</strong> @leslie2008generative; @banerjeeChildrensArithmeticSkills2025; @oshaughnessyDiverseMathematicalKnowledge2023; @nandaProgressMeasuresGrokking2023 (don&rsquo;t worry about all the technical details. Focus on the big picture. The authors do have a useful <a href="https://www.youtube.com/watch?v=IHikLL8ULa4&amp;ab_channel=NeelNanda">video walkthrough</a>).</li>
+<li>Extra: @gordon_numerical_2004; @oshaughnessy2019cultural;</li>
+</ul>
+<h1 id="r-advdatewed-9"><code>r advdate(wed, 9)</code></h1>
+<h3 id="stress-testing-reasoning-the-role-of-context">Stress testing reasoning: the role of context</h3>
+<ul>
+<li><strong>Readings:</strong> @evans_dual-processing_2008; @lampinenLanguageModelsHumans2024</li>
+</ul>
+<h1 id="r-advdatewed-10"><code>r advdate(wed, 10)</code></h1>
+<ul>
+<li><strong>No Readings for this week</strong> Work on project pitches. Post preliminary ideas on Canvas. Individual meetings to discuss the ideas w/ Gary during class.</li>
+</ul>
+<h1 id="r-advdatewed-11"><code>r advdate(wed, 11)</code></h1>
+<h3 id="stress-testing-methodology-of-cognitive-psychologycognitive-neuroscience">Stress testing methodology of cognitive psychology/cognitive (neuro)science</h3>
+<ul>
+<li><strong>Readings:</strong>
+@bowerExperimentalMethodsCognitive1989 (read or skim depending on your level of familiarity); @jonasCouldNeuroscientistUnderstand2017; Read 2 of the 12 case studies from @lindsey+BiologyLargeLanguage</li>
+<li>Extras: @nickelsSingleCaseStudies2022; @yarkoniGeneralizabilityCrisis2020</li>
+</ul>
+<h1 id="r-advdatewed-12"><code>r advdate(wed, 12)</code></h1>
+<h3 id="stress-testing-theories-of-intelligence">Stress testing theories of intelligence</h3>
+<p><strong>Special guest</strong> - Blaise Aguera y Arcas</p>
+<ul>
+<li><strong>Readings:</strong> <em>(Tentative)</em> @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12 in the PDF or the updated mildly interactive version <a href="https://whatisintelligence.antikythera.org/chapter-10/#periodization">online</a>).</li>
+<li>Extras: @szathmary_major_1995; @van_der_maas_dynamical_2006</li>
+</ul>
+<h1 id="r-advdatewed-13"><code>r advdate(wed, 13)</code></h1>
+<h3 id="thanksgiving---no-class">Thanksgiving - no class</h3>
+<ul>
+<li><strong>Project proposals due</strong> by 8pm.</li>
+</ul>
+<h1 id="r-advdatewed-14"><code>r advdate(wed, 14)</code></h1>
+<h3 id="revisiting-old-and-new-questions">Revisiting old and new questions</h3>
+<ul>
+<li><strong>Readings:</strong> Review previous readings in light of what you&rsquo;ve learned</li>
+<li><strong>Short reflection essay</strong>: Is all the AI madness of the last few years good for or bad for understanding the human mind? (~800 words).</li>
+</ul>
+<h1 id="r-advdatewed-15"><code>r advdate(wed, 15)</code></h1>
+<h3 id="final-presentations">Final presentations</h3>
+<h3 id="group-project-presentations-20-min-presentation--8-min-qa">Group project presentations [20 min presentation + 8 min Q&amp;A].</h3>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Subject to revision&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">© 2025 Gary Lupyan</div></footer>
+
+
+<script>
+
+(function(){
+  let pop=null, hoverTimer=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  function copyPlain(text){
+    try {
+      navigator.clipboard.writeText(text);
+    } catch(e){
+      
+      const t=document.createElement('textarea');
+      t.value=text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+  }
+  function open(el, html, plain){
+    close();
+    pop=document.createElement('div');
+    pop.className='cite-popover';
+    pop.innerHTML='<button class="cite-close" aria-label="Close">×</button>' +
+                  '<div class="cite-body">'+html+'</div>' +
+                  '<div style="margin-top:8px;text-align:right;"><button class="cite-copy" type="button">Copy reference</button></div>';
+    document.body.appendChild(pop);
+    const r=el.getBoundingClientRect();
+    const top=window.scrollY + r.bottom + 8;
+    let left=window.scrollX + r.left;
+    requestAnimationFrame(()=>{
+      if(left+pop.offsetWidth > window.scrollX + window.innerWidth - 16){
+        left = Math.max(16, window.scrollX + window.innerWidth - pop.offsetWidth - 16);
+      }
+      pop.style.top=top+'px'; pop.style.left=left+'px';
+    });
+    pop.querySelector('.cite-close').addEventListener('click', close);
+    pop.querySelector('.cite-copy').addEventListener('click', function(){ copyPlain(plain); });
+  }
+  document.addEventListener('click', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(a){
+      e.preventDefault();
+      open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain'));
+      return;
+    }
+    if(pop && !e.target.closest('.cite-popover')) close();
+  });
+  
+  document.addEventListener('mouseover', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(!a) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(()=>{ open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain')); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    if(!pop) return;
+    if(e.relatedTarget && (e.relatedTarget.closest('.cite-popover') || e.relatedTarget.closest('.cite-pop'))) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(close, 200);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('mouseover', function(e){
+    if(pop && e.target.closest('.cite-popover')){ clearTimeout(hoverTimer); }
+  });
+  document.addEventListener('mouseout', function(e){
+    if(pop && e.target.closest('.cite-popover')){
+      clearTimeout(hoverTimer);
+      hoverTimer=setTimeout(close, 200);
+    }
+  });
+})();
+</script>
+
+<script>
+
+(function(){
+  const header = document.querySelector('header');
+  const btn = document.querySelector('.nav-toggle');
+  if(!header || !btn) return;
+  btn.addEventListener('click', function(){
+    const open = header.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  
+  header.addEventListener('click', function(e){
+    const a = e.target.closest('nav a');
+    if(a && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('click', function(e){
+    if(header.classList.contains('nav-open') && !e.target.closest('header')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body></html>
+
+
+

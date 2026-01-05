@@ -1,0 +1,190 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<link rel="icon" href="/images/icon.png">
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+  header{background:#111;color:#fff;padding:14px 20px}
+  header a{color:#fff;text-decoration:none;margin-right:18px}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  nav ul{list-style:none;padding:0;margin:0;display:flex;gap:16px}
+  nav li{margin:0}
+  footer{border-top:1px solid #eee;color:#666;padding:16px 20px;font-size:14px}
+  h1,h2,h3{line-height:1.2}.subtitle{color:#555}.postlist li{margin:8px 0}pre code{white-space:pre-wrap}a{color:#0a58ca}
+  img{max-width:100%;height:auto;border-radius:4px}
+  /* full-bleed hero */
+  .hero{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+  .hero img{display:block;width:100vw;height:auto;border-radius:0}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover p{margin:0;line-height:1.35}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover .cite-copy{background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+  .cite-popover .cite-copy:hover{background:#eee}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+/* --- Mobile Hamburger + Popover polish --- */
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-toggle{display:none;align-items:center;justify-content:center;gap:4px;width:40px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:#fff;cursor:pointer}
+  .nav-toggle span{display:block;width:18px;height:2px;background:#fff}
+  header nav ul{display:flex;gap:16px;align-items:center;margin:0;padding:0;list-style:none}
+  header nav li{list-style:none;margin:0}
+  .cite-popover{padding:12px 18px 12px 14px}
+  .cite-popover .cite-body{padding-right:24px}
+  .cite-popover .cite-close{top:8px;right:10px}
+  @media (max-width: 768px){
+    .wrap{padding:16px 16px 0 16px}
+    header nav ul{
+      display:block;
+      overflow:hidden;
+      max-height:0;
+      transition:max-height .22s ease;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+      margin-top:12px
+    }
+    header.nav-open nav ul{ max-height:500px }
+    .nav-toggle{display:inline-flex}
+    .cite-popover{left:16px !important; right:16px; max-width:calc(100vw - 32px)}
+  }
+
+  /* Remove white strip between header/nav and hero (works on desktop & mobile) */
+  header, header .wrap, header nav, header nav ul{
+    margin-bottom:5 !important;
+    padding-bottom:10 !important;
+  }
+  main.wrap{padding-top:0 !important;}
+  main.wrap > *:first-child{margin-top:0 !important;}
+  .hero{margin-top:0 !important; padding-top:0 !important; line-height:0;}
+  .hero img{display:block; width:100%; height:auto;}
+
+</style></head><body>
+<header><div class="wrap">
+  <strong>{{ .Site.Title }}</strong>
+  
+<button class="nav-toggle" aria-controls="site-nav" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav id="site-nav" style="float:right;"><ul>
+    {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+  </ul></nav><div style="clear:both;"></div>
+</div></header>
+<main class="wrap">{{ block "main" . }}{{ end }}</main>
+<footer><div class="wrap">© {{ now.Format "2006" }} {{ with .Site.Params.author.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</div></footer>
+
+
+<script>
+// citeref popover (click or hover) with Copy button
+(function(){
+  let pop=null, hoverTimer=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  function copyPlain(text){
+    try {
+      navigator.clipboard.writeText(text);
+    } catch(e){
+      // fallback: create a temp element
+      const t=document.createElement('textarea');
+      t.value=text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+  }
+  function open(el, html, plain){
+    close();
+    pop=document.createElement('div');
+    pop.className='cite-popover';
+    pop.innerHTML='<button class="cite-close" aria-label="Close">×</button>' +
+                  '<div class="cite-body">'+html+'</div>' +
+                  '<div style="margin-top:8px;text-align:right;"><button class="cite-copy" type="button">Copy reference</button></div>';
+    document.body.appendChild(pop);
+    const r=el.getBoundingClientRect();
+    const top=window.scrollY + r.bottom + 8;
+    let left=window.scrollX + r.left;
+    requestAnimationFrame(()=>{
+      if(left+pop.offsetWidth > window.scrollX + window.innerWidth - 16){
+        left = Math.max(16, window.scrollX + window.innerWidth - pop.offsetWidth - 16);
+      }
+      pop.style.top=top+'px'; pop.style.left=left+'px';
+    });
+    pop.querySelector('.cite-close').addEventListener('click', close);
+    pop.querySelector('.cite-copy').addEventListener('click', function(){ copyPlain(plain); });
+  }
+  document.addEventListener('click', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(a){
+      e.preventDefault();
+      open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain'));
+      return;
+    }
+    if(pop && !e.target.closest('.cite-popover')) close();
+  });
+  // Hover handling
+  document.addEventListener('mouseover', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(!a) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(()=>{ open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain')); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    if(!pop) return;
+    if(e.relatedTarget && (e.relatedTarget.closest('.cite-popover') || e.relatedTarget.closest('.cite-pop'))) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(close, 200);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('mouseover', function(e){
+    if(pop && e.target.closest('.cite-popover')){ clearTimeout(hoverTimer); }
+  });
+  document.addEventListener('mouseout', function(e){
+    if(pop && e.target.closest('.cite-popover')){
+      clearTimeout(hoverTimer);
+      hoverTimer=setTimeout(close, 200);
+    }
+  });
+})();
+</script>
+
+<script>
+// Mobile nav toggle
+(function(){
+  const header = document.querySelector('header');
+  const btn = document.querySelector('.nav-toggle');
+  if(!header || !btn) return;
+  btn.addEventListener('click', function(){
+    const open = header.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  // Close menu on link click
+  header.addEventListener('click', function(e){
+    const a = e.target.closest('nav a');
+    if(a && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  // Close on outside click
+  document.addEventListener('click', function(e){
+    if(header.classList.contains('nav-open') && !e.target.closest('header')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  // Close on Esc
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body></html>
+
+
+

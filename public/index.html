@@ -1,0 +1,223 @@
+
+<!DOCTYPE html><html lang="en"><head>
+	<meta name="generator" content="Hugo 0.148.2">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognitive Science of Large Language Models</title>
+<link rel="icon" href="/images/icon.png">
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+  header{background:#111;color:#fff;padding:14px 20px}
+  header a{color:#fff;text-decoration:none;margin-right:18px}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  nav ul{list-style:none;padding:0;margin:0;display:flex;gap:16px}
+  nav li{margin:0}
+  footer{border-top:1px solid #eee;color:#666;padding:16px 20px;font-size:14px}
+  h1,h2,h3{line-height:1.2}.subtitle{color:#555}.postlist li{margin:8px 0}pre code{white-space:pre-wrap}a{color:#0a58ca}
+  img{max-width:100%;height:auto;border-radius:4px}
+   
+  .hero{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+  .hero img{display:block;width:100vw;height:auto;border-radius:0}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover p{margin:0;line-height:1.35}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover .cite-copy{background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+  .cite-popover .cite-copy:hover{background:#eee}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+ 
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-toggle{display:none;align-items:center;justify-content:center;gap:4px;width:40px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:#fff;cursor:pointer}
+  .nav-toggle span{display:block;width:18px;height:2px;background:#fff}
+  header nav ul{display:flex;gap:16px;align-items:center;margin:0;padding:0;list-style:none}
+  header nav li{list-style:none;margin:0}
+  .cite-popover{padding:12px 18px 12px 14px}
+  .cite-popover .cite-body{padding-right:24px}
+  .cite-popover .cite-close{top:8px;right:10px}
+  @media (max-width: 768px){
+    .wrap{padding:16px 16px 0 16px}
+    header nav ul{
+      display:block;
+      overflow:hidden;
+      max-height:0;
+      transition:max-height .22s ease;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+      margin-top:12px
+    }
+    header.nav-open nav ul{ max-height:500px }
+    .nav-toggle{display:inline-flex}
+    .cite-popover{left:16px !important; right:16px; max-width:calc(100vw - 32px)}
+  }
+
+   
+  header, header .wrap, header nav, header nav ul{
+    margin-bottom:5 !important;
+    padding-bottom:10 !important;
+  }
+  main.wrap{padding-top:0 !important;}
+  main.wrap > *:first-child{margin-top:0 !important;}
+  .hero{margin-top:0 !important; padding-top:0 !important; line-height:0;}
+  .hero img{display:block; width:100%; height:auto;}
+
+</style></head><body>
+<header><div class="wrap">
+  <strong>Psych 711: Cognitive Science of Large Language Models. Fall, 2025</strong>
+  
+<button class="nav-toggle" aria-controls="site-nav" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav id="site-nav" style="float:right;"><ul>
+    <li><a href="/">Home</a></li><li><a href="/schedule/">Schedule</a></li><li><a href="/logistics/">Logistics</a></li><li><a href="/resources/">Resources</a></li>
+  </ul></nav><div style="clear:both;"></div>
+</div></header>
+<main class="wrap">
+
+
+<div class="content"><div class="hero">
+  <img src="images/header.jpg" alt="Course header">
+</div>
+<h1 id="course-description">Course Description</h1>
+<p>Welcome to Psych 711: <strong>Cognitive Science of Large Language Models</strong>. We&rsquo;ll be meeting on Wednesdays 9am-11:30am in Brogden 634.</p>
+<p><strong>Instructor:</strong> Prof. Gary Lupyan [<a href="mailto:lupyan@wisc.edu">email</a>] [<a href="http://sapir.psych.wisc.edu">lab site</a>] - Professor of Psychology at University of Wisconsin-Madison</p>
+<p>The development of large language models (LLMs) &mdash; large artificial neural networks trained on large amounts of natural language &mdash; is arguably the biggest thing to happen to Cognitive Science in decades. Beyond whatever uses and misuses these models come to have in our society, their very existence acts as a stress test of many theories and frameworks that have been developed to explain the human mind.</p>
+<p>For example, language was thought to be unlearnable from data. Strong embodiment theories have argued that that much of our semantic knowledge is represented in terms of bodily states. What does it mean then that LLMs do learn language from data and come to possess rich semantic knowledge with no body and lacking all direct sensory input?</p>
+<p>We will also be touching on the long tradition of mechanistic interpretability. How useful are methods developed to study the human mind for studying LLMs? Can studying LLMs inspire new methods for studying human cognition?</p>
+<h1 id="course-learning-outcomes">Course Learning Outcomes</h1>
+<p>Students will&hellip;</p>
+<ol>
+<li>
+<p>be familiarized with: the intellectual history that led to large language models, to their basic operating principles, and how they relate to classic connectionist ideas of distributed representations and error-driven and predictive learning.</p>
+</li>
+<li>
+<p>consider competing claims of what it means for a system to &ldquo;understand&rdquo;, and how behavioral evidence can be used to make sense of these competing claims.</p>
+</li>
+<li>
+<p>explore the consequences LLMs have for core issues in cognitive science including poverty of the stimulus, concept learning, the role of context, and &ldquo;general&rdquo; intelligence.</p>
+</li>
+<li>
+<p>complete a final project that stress-tests an existing cognitive theory/framework using existing data, or an empirical project with the option to use an LLM as a model organism to help understand how a specific cognitive problem may be solved.</p>
+</li>
+</ol>
+<h1 id="expectations">Expectations</h1>
+<p>Students are expected to read the 2-5 readings assigned for each class. I expect students to critically engage with each reading. Be on the lookout for ideas that challenge your intuitions and that provoke you into thinking differently. To help you engage with the readings, each student will be randomly assigned to a 2-3 person group each week. After reading the papers individually, the group should get together to discuss the readings and &ndash; working together &ndash; fill out a <em>Response Sheet</em> (see <a href="https://docs.google.com/document/d/1N3eQQd40xufCTC0irJMPP7barnsBlyDQFh5fp9LLJpM/edit?usp=sharing"> Template</a>). Each group should upload the completed template to Canvas by 8pm on Monday. I will grade each response sheet on a 1-5 scale and will use your responses to help organize the discussion for the following class.</p>
+<p>Please note that some weeks have more/longer readings than other weeks. Plan your schedule accordingly. <strong>Final projects</strong> will be completed in groups of two. Each group has the option of choosing to write either a review/synthesis paper, or an empirical paper. Review/synthesis papers should involve selecting a cognitive theory/framework and stress testing it using previously published evidence involving LLMs. Empirical papers can involve collecting your own data (in the lab, online, by prompting an LLM, as appropriate), and/or using an LLM as a model organism to help understand how people may be solving some problem or, more abstractly, the computational principle by which a certain problem can be solved.</p>
+</div>
+</main>
+<footer><div class="wrap">© 2025 Gary Lupyan</div></footer>
+
+
+<script>
+
+(function(){
+  let pop=null, hoverTimer=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  function copyPlain(text){
+    try {
+      navigator.clipboard.writeText(text);
+    } catch(e){
+      
+      const t=document.createElement('textarea');
+      t.value=text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+  }
+  function open(el, html, plain){
+    close();
+    pop=document.createElement('div');
+    pop.className='cite-popover';
+    pop.innerHTML='<button class="cite-close" aria-label="Close">×</button>' +
+                  '<div class="cite-body">'+html+'</div>' +
+                  '<div style="margin-top:8px;text-align:right;"><button class="cite-copy" type="button">Copy reference</button></div>';
+    document.body.appendChild(pop);
+    const r=el.getBoundingClientRect();
+    const top=window.scrollY + r.bottom + 8;
+    let left=window.scrollX + r.left;
+    requestAnimationFrame(()=>{
+      if(left+pop.offsetWidth > window.scrollX + window.innerWidth - 16){
+        left = Math.max(16, window.scrollX + window.innerWidth - pop.offsetWidth - 16);
+      }
+      pop.style.top=top+'px'; pop.style.left=left+'px';
+    });
+    pop.querySelector('.cite-close').addEventListener('click', close);
+    pop.querySelector('.cite-copy').addEventListener('click', function(){ copyPlain(plain); });
+  }
+  document.addEventListener('click', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(a){
+      e.preventDefault();
+      open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain'));
+      return;
+    }
+    if(pop && !e.target.closest('.cite-popover')) close();
+  });
+  
+  document.addEventListener('mouseover', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(!a) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(()=>{ open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain')); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    if(!pop) return;
+    if(e.relatedTarget && (e.relatedTarget.closest('.cite-popover') || e.relatedTarget.closest('.cite-pop'))) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(close, 200);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('mouseover', function(e){
+    if(pop && e.target.closest('.cite-popover')){ clearTimeout(hoverTimer); }
+  });
+  document.addEventListener('mouseout', function(e){
+    if(pop && e.target.closest('.cite-popover')){
+      clearTimeout(hoverTimer);
+      hoverTimer=setTimeout(close, 200);
+    }
+  });
+})();
+</script>
+
+<script>
+
+(function(){
+  const header = document.querySelector('header');
+  const btn = document.querySelector('.nav-toggle');
+  if(!header || !btn) return;
+  btn.addEventListener('click', function(){
+    const open = header.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  
+  header.addEventListener('click', function(e){
+    const a = e.target.closest('nav a');
+    if(a && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('click', function(e){
+    if(header.classList.contains('nav-open') && !e.target.closest('header')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body></html>
+
+
+

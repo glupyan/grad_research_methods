@@ -1,0 +1,27 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Psych 711: Cognitive Science of Large Language Models. Fall, 2025"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+params:
+  description: "Cognitive Science of Large Language Models"
+  author:
+    name: "Gary Lupyan"
+  favicon:
+    icon: "images/icon.png"
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "Schedule"
+      url: "/schedule/"
+      weight: 2
+    - name: "Logistics"
+      url: "/logistics/"
+      weight: 3
+    - name: "Resources"
+      url: "/resources/"
+      weight: 4

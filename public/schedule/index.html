@@ -1,0 +1,300 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="icon" href="/images/icon.png">
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+  header{background:#111;color:#fff;padding:14px 20px}
+  header a{color:#fff;text-decoration:none;margin-right:18px}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  nav ul{list-style:none;padding:0;margin:0;display:flex;gap:16px}
+  nav li{margin:0}
+  footer{border-top:1px solid #eee;color:#666;padding:16px 20px;font-size:14px}
+  h1,h2,h3{line-height:1.2}.subtitle{color:#555}.postlist li{margin:8px 0}pre code{white-space:pre-wrap}a{color:#0a58ca}
+  img{max-width:100%;height:auto;border-radius:4px}
+   
+  .hero{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+  .hero img{display:block;width:100vw;height:auto;border-radius:0}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover p{margin:0;line-height:1.35}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover .cite-copy{background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+  .cite-popover .cite-copy:hover{background:#eee}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
+ 
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-toggle{display:none;align-items:center;justify-content:center;gap:4px;width:40px;height:36px;border:1px solid rgba(255,255,255,.25);border-radius:6px;background:transparent;color:#fff;cursor:pointer}
+  .nav-toggle span{display:block;width:18px;height:2px;background:#fff}
+  header nav ul{display:flex;gap:16px;align-items:center;margin:0;padding:0;list-style:none}
+  header nav li{list-style:none;margin:0}
+  .cite-popover{padding:12px 18px 12px 14px}
+  .cite-popover .cite-body{padding-right:24px}
+  .cite-popover .cite-close{top:8px;right:10px}
+  @media (max-width: 768px){
+    .wrap{padding:16px 16px 0 16px}
+    header nav ul{
+      display:block;
+      overflow:hidden;
+      max-height:0;
+      transition:max-height .22s ease;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+      margin-top:12px
+    }
+    header.nav-open nav ul{ max-height:500px }
+    .nav-toggle{display:inline-flex}
+    .cite-popover{left:16px !important; right:16px; max-width:calc(100vw - 32px)}
+  }
+
+   
+  header, header .wrap, header nav, header nav ul{
+    margin-bottom:5 !important;
+    padding-bottom:10 !important;
+  }
+  main.wrap{padding-top:0 !important;}
+  main.wrap > *:first-child{margin-top:0 !important;}
+  .hero{margin-top:0 !important; padding-top:0 !important; line-height:0;}
+  .hero img{display:block; width:100%; height:auto;}
+
+</style></head><body>
+<header><div class="wrap">
+  <strong>Psych 711: Cognitive Science of Large Language Models. Fall, 2025</strong>
+  
+<button class="nav-toggle" aria-controls="site-nav" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav id="site-nav" style="float:right;"><ul>
+    <li><a href="/">Home</a></li><li><a href="/schedule/">Schedule</a></li><li><a href="/logistics/">Logistics</a></li><li><a href="/resources/">Resources</a></li>
+  </ul></nav><div style="clear:both;"></div>
+</div></header>
+<main class="wrap">
+<article>
+  <h1></h1>
+  
+  <div class="content"><h1 id="class-schedule">Class Schedule<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h1>
+<p>I recommend reading the papers in the order in which they are listed.</p>
+<h1 id="week-1-wednesday-september-3-2025">Week 1 (Wednesday, September 3, 2025)</h1>
+<h3 id="what-is-learnable">What is learnable?</h3>
+<ul>
+<li><strong>Readings (in class):</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Sutton, R. (2019). The Bitter Lesson. &lt;em&gt;Cs&lt;/em&gt;. &lt;a href=&quot;https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf&lt;/a&gt;" data-plain="Sutton, R. (2019). The Bitter Lesson. Cs. https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf">Sutton (2019)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Agüera y Arcas, B. (2025). What Is Intelligence?. &lt;a href=&quot;https://whatisintelligence.antikythera.org/introduction/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://whatisintelligence.antikythera.org/introduction/&lt;/a&gt;" data-plain="Agüera y Arcas, B. (2025). What Is Intelligence?. https://whatisintelligence.antikythera.org/introduction/">Agüera y Arcas (2025)</a>;</li>
+<li><em>Related resources</em>: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Halevy, A., Norvig, P., &amp;amp; Pereira, F. (2009). The Unreasonable Effectiveness of Data. &lt;em&gt;IEEE Intelligent Systems&lt;/em&gt;, &lt;em&gt;24&lt;/em&gt;(2), 8–12. &lt;a href=&quot;https://doi.org/10.1109/MIS.2009.36&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1109/MIS.2009.36&lt;/a&gt;" data-plain="Halevy, A., Norvig, P., &amp; Pereira, F. (2009). The Unreasonable Effectiveness of Data. IEEE Intelligent Systems, 24(2), 8–12. https://doi.org/10.1109/MIS.2009.36">Halevy et al. (2009)</a>; <a href="https://youtube.com/watch?v=R7qy2BY6mTk&amp;list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&amp;index=32&amp;pp=iAQB">talk by Alyosha Efros</a></li>
+</ul>
+<h1 id="week-2-wednesday-september-10-2025">Week 2 (Wednesday, September 10, 2025)</h1>
+<h3 id="how-do-llms-work">How do LLMs work?</h3>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Rumelhart, D. E. (1989). The Architecture of Mind: A Connectionist Approach. &lt;em&gt;Foundations of Cognitive Science&lt;/em&gt;, 133–159." data-plain="Rumelhart, D. E. (1989). The Architecture of Mind: A Connectionist Approach. Foundations of Cognitive Science, 133–159.">Rumelhart (1989)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Lee, T. B. (2025). Large Language Models, Explained with a Minimum of Math and Jargon. &lt;em&gt;Understandingai&lt;/em&gt;. &lt;a href=&quot;https://www.understandingai.org/p/large-language-models-explained-with&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.understandingai.org/p/large-language-models-explained-with&lt;/a&gt;" data-plain="Lee, T. B. (2025). Large Language Models, Explained with a Minimum of Math and Jargon. Understandingai. https://www.understandingai.org/p/large-language-models-explained-with">Lee (2025)</a>; Either <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp;amp; Polosukhin, I. (2017). Attention Is All You Need. &lt;em&gt;arXiv&lt;/em&gt; 1706.03762. &lt;a href=&quot;https://doi.org/10.48550/arXiv.1706.03762&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.1706.03762&lt;/a&gt;" data-plain="Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention Is All You Need. arXiv 1706.03762. https://doi.org/10.48550/arXiv.1706.03762">Vaswani et al. (2017)</a> or @phuongFormalAlgorithmsTransformers2022.</li>
+<li><strong>Other resources for understanding transformers (very useful; strongly recommended!)</strong>:
+<a href="https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com">The illustrated transformer</a>; <a href="https://www.youtube.com/watch?v=wjZofJX0v4M&amp;ab_channel=3Blue1Brown">Transformers, the tech behind LLMs video</a> and the <a href="https://www.youtube.com/watch?v=eMlx5fFNoYc&amp;ab_channel=3Blue1Brown">next chapter focusing on attention</a>;</li>
+<li>Extra: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="McCoy, R. T., Yao, S., Friedman, D., Hardy, M. D., &amp;amp; Griffiths, T. L. (2024). Embers of Autoregression Show How Large Language Models Are Shaped by the Problem They Are Trained to Solve. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;121&lt;/em&gt;(41), e2322420121. &lt;a href=&quot;https://doi.org/10.1073/pnas.2322420121&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1073/pnas.2322420121&lt;/a&gt;" data-plain="McCoy, R. T., Yao, S., Friedman, D., Hardy, M. D., &amp; Griffiths, T. L. (2024). Embers of Autoregression Show How Large Language Models Are Shaped by the Problem They Are Trained to Solve. Proceedings of the National Academy of Sciences, 121(41), e2322420121. https://doi.org/10.1073/pnas.2322420121">McCoy et al. (2024)</a></li>
+</ul>
+<h1 id="week-3-wednesday-september-17-2025">Week 3 (Wednesday, September 17, 2025)</h1>
+<h3 id="learning-language-from-language">Learning language from language</h3>
+<p><strong>Special guest</strong> - Steven Piantadosi</p>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Elman, J. (1990). Finding Structure in Time. &lt;em&gt;Cognitive Science&lt;/em&gt;, &lt;em&gt;14&lt;/em&gt;(2), 179–211. &lt;a href=&quot;ISI:A1990DK92500001&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ISI:A1990DK92500001&lt;/a&gt;" data-plain="Elman, J. (1990). Finding Structure in Time. Cognitive Science, 14(2), 179–211. ISI:A1990DK92500001">Elman (1990)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Boleda, G. (2020). Distributional Semantics and Linguistic Theory. &lt;em&gt;Annual Review of Linguistics&lt;/em&gt;. &lt;a href=&quot;https://doi.org/10.1146/annurev-linguistics-011619-030303&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1146/annurev-linguistics-011619-030303&lt;/a&gt;" data-plain="Boleda, G. (2020). Distributional Semantics and Linguistic Theory. Annual Review of Linguistics. https://doi.org/10.1146/annurev-linguistics-011619-030303">Boleda (2020)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Piantadosi, S. T. (2024). Modern Language Models Refute Chomsky&amp;#x27;s Approach to Language. &lt;em&gt;From fieldwork to linguistic theory&lt;/em&gt;, 353–414. &lt;a href=&quot;https://zenodo.org/records/12665933&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://zenodo.org/records/12665933&lt;/a&gt;" data-plain="Piantadosi, S. T. (2024). Modern Language Models Refute Chomsky&#x27;s Approach to Language. From fieldwork to linguistic theory, 353–414. https://zenodo.org/records/12665933">Piantadosi (2024)</a></li>
+</ul>
+<h1 id="week-4-wednesday-september-24-2025">Week 4 (Wednesday, September 24, 2025)</h1>
+<h3 id="learning-about-the-world-from-language">Learning about the world from language</h3>
+<p><strong>Special guest</strong> - Marina Bedny</p>
+<ul>
+<li>
+<p><strong>Readings:</strong> <a href="https://scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf">Plato: The allegory of the cave</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Lupyan, G. &amp;amp; Lewis, M. (2017). From Words-as-Mappings to Words-as-Cues: The Role of Language in Semantic Knowledge. &lt;em&gt;Language, Cognition and Neuroscience&lt;/em&gt;, &lt;em&gt;34&lt;/em&gt;(10), 1319–1337. &lt;a href=&quot;https://doi.org/10.1080/23273798.2017.1404114&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1080/23273798.2017.1404114&lt;/a&gt;" data-plain="Lupyan, G. &amp; Lewis, M. (2017). From Words-as-Mappings to Words-as-Cues: The Role of Language in Semantic Knowledge. Language, Cognition and Neuroscience, 34(10), 1319–1337. https://doi.org/10.1080/23273798.2017.1404114">Lupyan &amp; Lewis (2017)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Yildirim, I. &amp;amp; Paul, L. A. (2024). From Task Structures to World Models: What Do LLMs Know?. &lt;em&gt;Trends in Cognitive Sciences&lt;/em&gt;, &lt;em&gt;28&lt;/em&gt;(5), 404–415. &lt;a href=&quot;https://doi.org/10.1016/j.tics.2024.02.008&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1016/j.tics.2024.02.008&lt;/a&gt;" data-plain="Yildirim, I. &amp; Paul, L. A. (2024). From Task Structures to World Models: What Do LLMs Know?. Trends in Cognitive Sciences, 28(5), 404–415. https://doi.org/10.1016/j.tics.2024.02.008">Yildirim &amp; Paul (2024)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Wang, Z., Akshi, Keil, S., Kim, J. S., &amp;amp; Bedny, M. (in press). Constructing Meaning from Language: Visual Knowledge in People Born Blind and in Large Language Models. &lt;em&gt;Annual Review of Linguistics&lt;/em&gt;." data-plain="Wang, Z., Akshi, Keil, S., Kim, J. S., &amp; Bedny, M. (in press). Constructing Meaning from Language: Visual Knowledge in People Born Blind and in Large Language Models. Annual Review of Linguistics.">Wang et al. (in press)</a></p>
+</li>
+<li>
+<p>Recommended: response to Yildirim and Paul: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Goddu, M. K., Noë, A., &amp;amp; Thompson, E. (2024). LLMs Don’t Know Anything: Reply to Yildirim and Paul. &lt;em&gt;Trends in Cognitive Sciences&lt;/em&gt;, &lt;em&gt;28&lt;/em&gt;(11), 963–964. &lt;a href=&quot;https://doi.org/10.1016/j.tics.2024.06.008&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1016/j.tics.2024.06.008&lt;/a&gt;" data-plain="Goddu, M. K., Noë, A., &amp; Thompson, E. (2024). LLMs Don’t Know Anything: Reply to Yildirim and Paul. Trends in Cognitive Sciences, 28(11), 963–964. https://doi.org/10.1016/j.tics.2024.06.008">Goddu et al. (2024)</a>; Counter-response: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Yildirim, I. &amp;amp; Paul, L. A. (2024). Response to Goddu et al.: New Ways of Characterizing and Acquiring Knowledge. &lt;em&gt;Trends in Cognitive Sciences&lt;/em&gt;, &lt;em&gt;28&lt;/em&gt;(11), 965–966. &lt;a href=&quot;https://doi.org/10.1016/j.tics.2024.08.004&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1016/j.tics.2024.08.004&lt;/a&gt;" data-plain="Yildirim, I. &amp; Paul, L. A. (2024). Response to Goddu et al.: New Ways of Characterizing and Acquiring Knowledge. Trends in Cognitive Sciences, 28(11), 965–966. https://doi.org/10.1016/j.tics.2024.08.004">Yildirim &amp; Paul (2024)</a></p>
+</li>
+</ul>
+<h1 id="week-5-wednesday-october-1-2025">Week 5 (Wednesday, October 1, 2025)</h1>
+<h3 id="do-large-language-models-understand-us">Do large language models understand us?</h3>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Mitchell, M. &amp;amp; Krakauer, D. C. (2023). The Debate over Understanding in AI’s Large Language Models. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;120&lt;/em&gt;(13), e2215907120. &lt;a href=&quot;https://doi.org/10.1073/pnas.2215907120&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1073/pnas.2215907120&lt;/a&gt;" data-plain="Mitchell, M. &amp; Krakauer, D. C. (2023). The Debate over Understanding in AI’s Large Language Models. Proceedings of the National Academy of Sciences, 120(13), e2215907120. https://doi.org/10.1073/pnas.2215907120">Mitchell &amp; Krakauer (2023)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Agüera y Arcas, B. (2022). Do Large Language Models Understand Us?. &lt;em&gt;Medium&lt;/em&gt;. &lt;a href=&quot;https://medium.com/@blaisea/do-large-language-models-understand-us-6f881d6d8e75&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://medium.com/@blaisea/do-large-language-models-understand-us-6f881d6d8e75&lt;/a&gt;" data-plain="Agüera y Arcas, B. (2022). Do Large Language Models Understand Us?. Medium. https://medium.com/@blaisea/do-large-language-models-understand-us-6f881d6d8e75">Agüera y Arcas (2022)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Piantadosi, S. T. &amp;amp; Hill, F. (2022). Meaning without Reference in Large Language Models. &lt;em&gt;arXiv&lt;/em&gt; 2208.02957. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2208.02957&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.2208.02957&lt;/a&gt;" data-plain="Piantadosi, S. T. &amp; Hill, F. (2022). Meaning without Reference in Large Language Models. arXiv 2208.02957. https://doi.org/10.48550/arXiv.2208.02957">Piantadosi &amp; Hill (2022)</a></li>
+<li><strong>Short reflection essay</strong>: So what do you think? Do large language models understand us? (~800 words).</li>
+<li>Extra: Feel free to also browse the talks in <a href="https://skywritingspress.ca/">this series organized by Stevan Harnad</a>, e.g., the <a href="https://www.youtube.com/watch?v=yyRzTL201zI&amp;list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&amp;index=24&amp;pp=iAQB">different kinds of understanding by Chalmers</a>.</li>
+</ul>
+<h1 id="week-6-wednesday-october-8-2025">Week 6 (Wednesday, October 8, 2025)</h1>
+<h3 id="stress-testing-embodiment">Stress testing embodiment</h3>
+<ul>
+<li>Lots of reading this week!</li>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Barsalou, L. (1999). Perceptual Symbol Systems. &lt;em&gt;The Behavioral and Brain Sciences&lt;/em&gt;, &lt;em&gt;22&lt;/em&gt;(4), 577-609; discussion 610-660. &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/11301525&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.ncbi.nlm.nih.gov/pubmed/11301525&lt;/a&gt;" data-plain="Barsalou, L. (1999). Perceptual Symbol Systems. The Behavioral and Brain Sciences, 22(4), 577-609; discussion 610-660. http://www.ncbi.nlm.nih.gov/pubmed/11301525">Barsalou (1999)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Mollo, D. C. &amp;amp; Millière, R. (2023). The Vector Grounding Problem. &lt;em&gt;arXiv&lt;/em&gt; 2304.01481. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2304.01481&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.2304.01481&lt;/a&gt;" data-plain="Mollo, D. C. &amp; Millière, R. (2023). The Vector Grounding Problem. arXiv 2304.01481. https://doi.org/10.48550/arXiv.2304.01481">Mollo &amp; Millière (2023)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Pavlick, E. (2023). Symbols and Grounding in Large Language Models. &lt;em&gt;Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences&lt;/em&gt;, &lt;em&gt;381&lt;/em&gt;(2251), 20220041. &lt;a href=&quot;https://doi.org/10.1098/rsta.2022.0041&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1098/rsta.2022.0041&lt;/a&gt;" data-plain="Pavlick, E. (2023). Symbols and Grounding in Large Language Models. Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 381(2251), 20220041. https://doi.org/10.1098/rsta.2022.0041">Pavlick (2023)</a></li>
+<li>Extra: <a href="https://philpapers.org/archive/CHADTR.pdf">A philosophical take by David Chalmers on the possibility of &ldquo;pure thinkers&rdquo;</a></li>
+</ul>
+<h1 id="week-7-wednesday-october-15-2025">Week 7 (Wednesday, October 15, 2025)</h1>
+<h3 id="stress-testing-the-language-of-thought-hypothesis-learning-to-learn-and-represent">Stress testing the language of thought hypothesis: learning to learn and represent</h3>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Quilty-Dunn, J., Porot, N., &amp;amp; Mandelbaum, E. (2022). The Best Game in Town: The Re-Emergence of the Language of Thought Hypothesis Across the Cognitive Sciences. &lt;em&gt;The Behavioral and Brain Sciences&lt;/em&gt;, 1–55. &lt;a href=&quot;https://doi.org/10.1017/S0140525X22002849&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1017/S0140525X22002849&lt;/a&gt;" data-plain="Quilty-Dunn, J., Porot, N., &amp; Mandelbaum, E. (2022). The Best Game in Town: The Re-Emergence of the Language of Thought Hypothesis Across the Cognitive Sciences. The Behavioral and Brain Sciences, 1–55. https://doi.org/10.1017/S0140525X22002849">Quilty-Dunn et al. (2022)</a> (also read at least 2 positive and 2 negative commentaries); <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Lake, B. M. &amp;amp; Baroni, M. (2023). Human-like Systematic Generalization through a Meta-Learning Neural Network. &lt;em&gt;Nature&lt;/em&gt;, &lt;em&gt;623&lt;/em&gt;(7985), 115–121. &lt;a href=&quot;https://doi.org/10.1038/s41586-023-06668-3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1038/s41586-023-06668-3&lt;/a&gt;" data-plain="Lake, B. M. &amp; Baroni, M. (2023). Human-like Systematic Generalization through a Meta-Learning Neural Network. Nature, 623(7985), 115–121. https://doi.org/10.1038/s41586-023-06668-3">Lake &amp; Baroni (2023)</a>; Watch <a href="https://www.youtube.com/watch?v=6gSYMX3I5Bs&amp;ab_channel=KempnerInstituteatHarvardUniversity">this talk on learning compositionality by Pavlick</a></li>
+<li>Extra: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Griffiths, T. L., Lake, B. M., McCoy, R. T., Pavlick, E., &amp;amp; Webb, T. W. (2025). Whither Symbols in the Era of Advanced Neural Networks?. &lt;em&gt;arXiv&lt;/em&gt; 2508.05776. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2508.05776&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.2508.05776&lt;/a&gt;" data-plain="Griffiths, T. L., Lake, B. M., McCoy, R. T., Pavlick, E., &amp; Webb, T. W. (2025). Whither Symbols in the Era of Advanced Neural Networks?. arXiv 2508.05776. https://doi.org/10.48550/arXiv.2508.05776">Griffiths et al. (2025)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Binz, M., Dasgupta, I., Jagadish, A. K., Botvinick, M., Wang, J. X., &amp;amp; Schulz, E. (2024). Meta-Learned Models of Cognition. &lt;em&gt;Behavioral and Brain Sciences&lt;/em&gt;, &lt;em&gt;47&lt;/em&gt;, e147. &lt;a href=&quot;https://doi.org/10.1017/S0140525X23003266&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1017/S0140525X23003266&lt;/a&gt;" data-plain="Binz, M., Dasgupta, I., Jagadish, A. K., Botvinick, M., Wang, J. X., &amp; Schulz, E. (2024). Meta-Learned Models of Cognition. Behavioral and Brain Sciences, 47, e147. https://doi.org/10.1017/S0140525X23003266">Binz et al. (2024)</a>;</li>
+</ul>
+<h1 id="week-8-wednesday-october-22-2025">Week 8 (Wednesday, October 22, 2025)</h1>
+<h3 id="stress-testing-numerical-cognition">Stress testing numerical cognition</h3>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Leslie, A. M., Gelman, R., &amp;amp; Gallistel, C. (2008). The Generative Basis of Natural Number Concepts. &lt;em&gt;Trends in cognitive sciences&lt;/em&gt;, &lt;em&gt;12&lt;/em&gt;(6), 213–218." data-plain="Leslie, A. M., Gelman, R., &amp; Gallistel, C. (2008). The Generative Basis of Natural Number Concepts. Trends in cognitive sciences, 12(6), 213–218.">Leslie et al. (2008)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Banerjee, A. V., Bhattacharjee, S., Chattopadhyay, R., Duflo, E., Ganimian, A. J., Rajah, K., &amp;amp; Spelke, E. S. (2025). Children’s Arithmetic Skills Do Not Transfer between Applied and Academic Mathematics. &lt;em&gt;Nature&lt;/em&gt;, &lt;em&gt;639&lt;/em&gt;(8055), 673–681. &lt;a href=&quot;https://doi.org/10.1038/s41586-024-08502-w&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1038/s41586-024-08502-w&lt;/a&gt;" data-plain="Banerjee, A. V., Bhattacharjee, S., Chattopadhyay, R., Duflo, E., Ganimian, A. J., Rajah, K., &amp; Spelke, E. S. (2025). Children’s Arithmetic Skills Do Not Transfer between Applied and Academic Mathematics. Nature, 639(8055), 673–681. https://doi.org/10.1038/s41586-024-08502-w">Banerjee et al. (2025)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="O’Shaughnessy, D. M., Cruz Cordero, T., Mollica, F., Boni, I., Jara-Ettinger, J., Gibson, E., &amp;amp; Piantadosi, S. T. (2023). Diverse Mathematical Knowledge among Indigenous Amazonians. &lt;em&gt;Proceedings of the National Academy of Sciences&lt;/em&gt;, &lt;em&gt;120&lt;/em&gt;(35), e2215999120. &lt;a href=&quot;https://doi.org/10.1073/pnas.2215999120&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1073/pnas.2215999120&lt;/a&gt;" data-plain="O’Shaughnessy, D. M., Cruz Cordero, T., Mollica, F., Boni, I., Jara-Ettinger, J., Gibson, E., &amp; Piantadosi, S. T. (2023). Diverse Mathematical Knowledge among Indigenous Amazonians. Proceedings of the National Academy of Sciences, 120(35), e2215999120. https://doi.org/10.1073/pnas.2215999120">O’Shaughnessy et al. (2023)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Nanda, N., Chan, L., Lieberum, T., Smith, J., &amp;amp; Steinhardt, J. (2023). Progress Measures for Grokking via Mechanistic Interpretability. &lt;em&gt;arXiv&lt;/em&gt; 2301.05217. &lt;a href=&quot;https://doi.org/10.48550/arXiv.2301.05217&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.2301.05217&lt;/a&gt;" data-plain="Nanda, N., Chan, L., Lieberum, T., Smith, J., &amp; Steinhardt, J. (2023). Progress Measures for Grokking via Mechanistic Interpretability. arXiv 2301.05217. https://doi.org/10.48550/arXiv.2301.05217">Nanda et al. (2023)</a> (don&rsquo;t worry about all the technical details. Focus on the big picture. The authors do have a useful <a href="https://www.youtube.com/watch?v=IHikLL8ULa4&amp;ab_channel=NeelNanda">video walkthrough</a>).</li>
+<li>Extra: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Gordon, P. (2004). Numerical Cognition without Words: Evidence from Amazonia. &lt;em&gt;Science&lt;/em&gt;, &lt;em&gt;306&lt;/em&gt;(5695), 496–499." data-plain="Gordon, P. (2004). Numerical Cognition without Words: Evidence from Amazonia. Science, 306(5695), 496–499.">Gordon (2004)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="O&amp;#x27;Shaughnessy, D. M., Gibson, E., &amp;amp; Piantadosi, S. T. (2021). The Cultural Origins of Number. &lt;em&gt;Psychological Review&lt;/em&gt;. &lt;a href=&quot;http://colala.berkeley.edu/papers/oshaughnessy2021cultural.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://colala.berkeley.edu/papers/oshaughnessy2021cultural.pdf&lt;/a&gt;" data-plain="O&#x27;Shaughnessy, D. M., Gibson, E., &amp; Piantadosi, S. T. (2021). The Cultural Origins of Number. Psychological Review. http://colala.berkeley.edu/papers/oshaughnessy2021cultural.pdf">O&rsquo;Shaughnessy et al. (2021)</a>;</li>
+</ul>
+<h1 id="week-9-wednesday-october-29-2025">Week 9 (Wednesday, October 29, 2025)</h1>
+<h3 id="stress-testing-reasoning-the-role-of-context">Stress testing reasoning: the role of context</h3>
+<ul>
+<li><strong>Readings:</strong> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Evans, J. S. B. T. (2008). Dual-Processing Accounts of Reasoning, Judgment, and Social Cognition. &lt;em&gt;Annual Review of Psychology&lt;/em&gt;, &lt;em&gt;59&lt;/em&gt;(1), 255–278. &lt;a href=&quot;https://doi.org/10.1146/annurev.psych.59.103006.093629&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1146/annurev.psych.59.103006.093629&lt;/a&gt;" data-plain="Evans, J. S. B. T. (2008). Dual-Processing Accounts of Reasoning, Judgment, and Social Cognition. Annual Review of Psychology, 59(1), 255–278. https://doi.org/10.1146/annurev.psych.59.103006.093629">Evans (2008)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Lampinen, A. K., Dasgupta, I., Chan, S. C. Y., Sheahan, H. R., Creswell, A., Kumaran, D., McClelland, J. L., &amp;amp; Hill, F. (2024). Language Models, like Humans, Show Content Effects on Reasoning Tasks. &lt;em&gt;PNAS nexus&lt;/em&gt;, &lt;em&gt;3&lt;/em&gt;(7), pgae233. &lt;a href=&quot;https://doi.org/10.1093/pnasnexus/pgae233&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1093/pnasnexus/pgae233&lt;/a&gt;" data-plain="Lampinen, A. K., Dasgupta, I., Chan, S. C. Y., Sheahan, H. R., Creswell, A., Kumaran, D., McClelland, J. L., &amp; Hill, F. (2024). Language Models, like Humans, Show Content Effects on Reasoning Tasks. PNAS nexus, 3(7), pgae233. https://doi.org/10.1093/pnasnexus/pgae233">Lampinen et al. (2024)</a></li>
+</ul>
+<h1 id="week-10-wednesday-november-5-2025">Week 10 (Wednesday, November 5, 2025)</h1>
+<ul>
+<li><strong>No Readings for this week</strong> Work on project pitches. Post preliminary ideas on Canvas. Individual meetings to discuss the ideas w/ Gary during class.</li>
+</ul>
+<h1 id="week-11-wednesday-november-12-2025">Week 11 (Wednesday, November 12, 2025)</h1>
+<h3 id="stress-testing-methodology-of-cognitive-psychologycognitive-neuroscience">Stress testing methodology of cognitive psychology/cognitive (neuro)science</h3>
+<ul>
+<li><strong>Readings:</strong>
+<a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Bower, G. H. &amp;amp; Clapper, J. P. (1989). Experimental Methods in Cognitive Science. &lt;em&gt;Foundations of Cognitive Science&lt;/em&gt;, 245–300." data-plain="Bower, G. H. &amp; Clapper, J. P. (1989). Experimental Methods in Cognitive Science. Foundations of Cognitive Science, 245–300.">Bower &amp; Clapper (1989)</a> (read or skim depending on your level of familiarity); <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Jonas, E. &amp;amp; Kording, K. P. (2017). Could a Neuroscientist Understand a Microprocessor?. &lt;em&gt;PLOS Computational Biology&lt;/em&gt;, &lt;em&gt;13&lt;/em&gt;(1), e1005268. &lt;a href=&quot;https://doi.org/10.1371/journal.pcbi.1005268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1371/journal.pcbi.1005268&lt;/a&gt;" data-plain="Jonas, E. &amp; Kording, K. P. (2017). Could a Neuroscientist Understand a Microprocessor?. PLOS Computational Biology, 13(1), e1005268. https://doi.org/10.1371/journal.pcbi.1005268">Jonas &amp; Kording (2017)</a>; Read 2 of the 12 case studies from <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Lindsey, J., Gurnee, W., Ameisen, E., Chen, B., Pearce, A., Turner, N. L., Citro, C., Abrahams, D., Carter, S., Hosmer, B., Marcus, J., Sklar, M., Templeton, A., Bricken, T., McDougall, C., Cunningham, H., Henighan, T., Jermyn, A., Jones, A., Persic, A., Qi, Z., Thompson, T. B., Zimmerman, S., Rivoire, K., Conerly, T., Olah, C., &amp;amp; Batson, J. (2025). On the Biology of a Large Language Model. &lt;em&gt;Transformer Circuits&lt;/em&gt;. &lt;a href=&quot;https://transformer-circuits.pub/2025/attribution-graphs/biology.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://transformer-circuits.pub/2025/attribution-graphs/biology.html&lt;/a&gt;" data-plain="Lindsey, J., Gurnee, W., Ameisen, E., Chen, B., Pearce, A., Turner, N. L., Citro, C., Abrahams, D., Carter, S., Hosmer, B., Marcus, J., Sklar, M., Templeton, A., Bricken, T., McDougall, C., Cunningham, H., Henighan, T., Jermyn, A., Jones, A., Persic, A., Qi, Z., Thompson, T. B., Zimmerman, S., Rivoire, K., Conerly, T., Olah, C., &amp; Batson, J. (2025). On the Biology of a Large Language Model. Transformer Circuits. https://transformer-circuits.pub/2025/attribution-graphs/biology.html">Lindsey et al. (2025)</a></li>
+<li>Extras: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Nickels, L., Fischer-Baum, S., &amp;amp; Best, W. (2022). Single Case Studies Are a Powerful Tool for Developing, Testing and Extending Theories. &lt;em&gt;Nature Reviews Psychology&lt;/em&gt;, &lt;em&gt;1&lt;/em&gt;(12), 733–747. &lt;a href=&quot;https://doi.org/10.1038/s44159-022-00127-y&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1038/s44159-022-00127-y&lt;/a&gt;" data-plain="Nickels, L., Fischer-Baum, S., &amp; Best, W. (2022). Single Case Studies Are a Powerful Tool for Developing, Testing and Extending Theories. Nature Reviews Psychology, 1(12), 733–747. https://doi.org/10.1038/s44159-022-00127-y">Nickels et al. (2022)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Yarkoni, T. (2020). The Generalizability Crisis. &lt;em&gt;The Behavioral and Brain Sciences&lt;/em&gt;, &lt;em&gt;45&lt;/em&gt;, e1. &lt;a href=&quot;https://doi.org/10.1017/S0140525X20001685&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1017/S0140525X20001685&lt;/a&gt;" data-plain="Yarkoni, T. (2020). The Generalizability Crisis. The Behavioral and Brain Sciences, 45, e1. https://doi.org/10.1017/S0140525X20001685">Yarkoni (2020)</a></li>
+</ul>
+<h1 id="week-12-wednesday-november-19-2025">Week 12 (Wednesday, November 19, 2025)</h1>
+<h3 id="stress-testing-theories-of-intelligence">Stress testing theories of intelligence</h3>
+<p><strong>Special guest</strong> - Blaise Aguera y Arcas</p>
+<ul>
+<li><strong>Readings:</strong> <em>(Tentative)</em> <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Legg, S. &amp;amp; Hutter, M. (2007). A Collection of Definitions of Intelligence. &lt;em&gt;arXiv&lt;/em&gt; 0706.3639. &lt;a href=&quot;https://doi.org/10.48550/arXiv.0706.3639&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.0706.3639&lt;/a&gt;" data-plain="Legg, S. &amp; Hutter, M. (2007). A Collection of Definitions of Intelligence. arXiv 0706.3639. https://doi.org/10.48550/arXiv.0706.3639">Legg &amp; Hutter (2007)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Chollet, F. (2019). On the Measure of Intelligence. &lt;em&gt;arXiv&lt;/em&gt; 1911.01547. &lt;a href=&quot;https://doi.org/10.48550/arXiv.1911.01547&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.48550/arXiv.1911.01547&lt;/a&gt;" data-plain="Chollet, F. (2019). On the Measure of Intelligence. arXiv 1911.01547. https://doi.org/10.48550/arXiv.1911.01547">Chollet (2019)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Agüera y Arcas, B. (2025). What Is Intelligence?: Lessons from AI About Evolution, Computing, and Minds. {MIT} Press. &lt;a href=&quot;https://mitpress.mit.edu/9780262049955/what-is-intelligence/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mitpress.mit.edu/9780262049955/what-is-intelligence/&lt;/a&gt;" data-plain="Agüera y Arcas, B. (2025). What Is Intelligence?: Lessons from AI About Evolution, Computing, and Minds. {MIT} Press. https://mitpress.mit.edu/9780262049955/what-is-intelligence/">Agüera y Arcas (2025)</a> (Chapter 12 in the PDF or the updated mildly interactive version <a href="https://whatisintelligence.antikythera.org/chapter-10/#periodization">online</a>).</li>
+<li>Extras: <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Szathmáry, E. &amp;amp; Smith, J. M. (1995). The Major Evolutionary Transitions. &lt;em&gt;Nature&lt;/em&gt;, &lt;em&gt;374&lt;/em&gt;(6519), 227–232. &lt;a href=&quot;http://joelvelasco.net/teaching/167win10/szathmary%20and%20maynard%20smith%2095-major%20evo%20transitions.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://joelvelasco.net/teaching/167win10/szathmary%20and%20maynard%20smith%2095-major%20evo%20transitions.pdf&lt;/a&gt;" data-plain="Szathmáry, E. &amp; Smith, J. M. (1995). The Major Evolutionary Transitions. Nature, 374(6519), 227–232. http://joelvelasco.net/teaching/167win10/szathmary%20and%20maynard%20smith%2095-major%20evo%20transitions.pdf">Szathmáry &amp; Smith (1995)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="van der Maas, H. L. J., Dolan, C. V., Grasman, R. P. P. P., Wicherts, J. M., Huizenga, H. M., &amp;amp; Raijmakers, M. E. J. (2006). A Dynamical Model of General Intelligence: The Positive Manifold of Intelligence by Mutualism. &lt;em&gt;Psychological Review&lt;/em&gt;, &lt;em&gt;113&lt;/em&gt;(4), 842–861. &lt;a href=&quot;https://doi.org/10.1037/0033-295X.113.4.842&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1037/0033-295X.113.4.842&lt;/a&gt;" data-plain="van der Maas, H. L. J., Dolan, C. V., Grasman, R. P. P. P., Wicherts, J. M., Huizenga, H. M., &amp; Raijmakers, M. E. J. (2006). A Dynamical Model of General Intelligence: The Positive Manifold of Intelligence by Mutualism. Psychological Review, 113(4), 842–861. https://doi.org/10.1037/0033-295X.113.4.842">van der Maas et al. (2006)</a></li>
+</ul>
+<h1 id="week-13-wednesday-november-26-2025">Week 13 (Wednesday, November 26, 2025)</h1>
+<h3 id="thanksgiving---no-class">Thanksgiving - no class</h3>
+<ul>
+<li><strong>Project proposals due</strong> by 8pm.</li>
+</ul>
+<h1 id="week-14-wednesday-december-3-2025">Week 14 (Wednesday, December 3, 2025)</h1>
+<h3 id="revisiting-old-and-new-questions">Revisiting old and new questions</h3>
+<ul>
+<li><strong>Readings:</strong> Review previous readings in light of what you&rsquo;ve learned</li>
+<li><strong>Short reflection essay</strong>: Is all the AI madness of the last few years good for or bad for understanding the human mind? (~800 words).</li>
+</ul>
+<h1 id="week-15-wednesday-december-10-2025">Week 15 (Wednesday, December 10, 2025)</h1>
+<h3 id="final-presentations">Final presentations</h3>
+<h3 id="group-project-presentations-20-min-presentation--8-min-qa">Group project presentations [20 min presentation + 8 min Q&amp;A].</h3>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Subject to revision&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+</article>
+</main>
+<footer><div class="wrap">© 2025 Gary Lupyan</div></footer>
+
+
+<script>
+
+(function(){
+  let pop=null, hoverTimer=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  function copyPlain(text){
+    try {
+      navigator.clipboard.writeText(text);
+    } catch(e){
+      
+      const t=document.createElement('textarea');
+      t.value=text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+  }
+  function open(el, html, plain){
+    close();
+    pop=document.createElement('div');
+    pop.className='cite-popover';
+    pop.innerHTML='<button class="cite-close" aria-label="Close">×</button>' +
+                  '<div class="cite-body">'+html+'</div>' +
+                  '<div style="margin-top:8px;text-align:right;"><button class="cite-copy" type="button">Copy reference</button></div>';
+    document.body.appendChild(pop);
+    const r=el.getBoundingClientRect();
+    const top=window.scrollY + r.bottom + 8;
+    let left=window.scrollX + r.left;
+    requestAnimationFrame(()=>{
+      if(left+pop.offsetWidth > window.scrollX + window.innerWidth - 16){
+        left = Math.max(16, window.scrollX + window.innerWidth - pop.offsetWidth - 16);
+      }
+      pop.style.top=top+'px'; pop.style.left=left+'px';
+    });
+    pop.querySelector('.cite-close').addEventListener('click', close);
+    pop.querySelector('.cite-copy').addEventListener('click', function(){ copyPlain(plain); });
+  }
+  document.addEventListener('click', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(a){
+      e.preventDefault();
+      open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain'));
+      return;
+    }
+    if(pop && !e.target.closest('.cite-popover')) close();
+  });
+  
+  document.addEventListener('mouseover', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(!a) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(()=>{ open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain')); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    if(!pop) return;
+    if(e.relatedTarget && (e.relatedTarget.closest('.cite-popover') || e.relatedTarget.closest('.cite-pop'))) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(close, 200);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('mouseover', function(e){
+    if(pop && e.target.closest('.cite-popover')){ clearTimeout(hoverTimer); }
+  });
+  document.addEventListener('mouseout', function(e){
+    if(pop && e.target.closest('.cite-popover')){
+      clearTimeout(hoverTimer);
+      hoverTimer=setTimeout(close, 200);
+    }
+  });
+})();
+</script>
+
+<script>
+
+(function(){
+  const header = document.querySelector('header');
+  const btn = document.querySelector('.nav-toggle');
+  if(!header || !btn) return;
+  btn.addEventListener('click', function(){
+    const open = header.classList.toggle('nav-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  
+  header.addEventListener('click', function(e){
+    const a = e.target.closest('nav a');
+    if(a && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('click', function(e){
+    if(header.classList.contains('nav-open') && !e.target.closest('header')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && header.classList.contains('nav-open')){
+      header.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body></html>
+
+
+
