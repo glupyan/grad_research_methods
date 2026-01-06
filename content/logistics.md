@@ -3,17 +3,17 @@ title: "Logistics"
 date: 2026-01-05
 ---
 
-**Course:** Psych 711: Graduate Research Methods
+**Course:** Psych 711: Graduate Research Methods in Psychology
 
 **Instructors:** Profs. [Gary Lupyan](lupyan@wisc.edu) & [João Guassi Moreira](jmoreira2@wisc.edu).
 
 **Lecture Time:** Wednesdays 2:30pm-3:45pm, Brogden 634
 
-**Section Time** Mondays, 3:00pm-3:50pm
+**Section Time:** Mondays, 3:00pm-3:50pm, Brogden 634
 
 **Office hours for Gary:** TBD, Brogden 526
 
-**Office hours for João:** TBD
+**Office hours for João:** TBD, Brogden
 
 **Syllabus:** [Class syllabus](../grad_methods_syllabus.pdf)
 
