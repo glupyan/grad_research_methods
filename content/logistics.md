@@ -13,7 +13,7 @@ date: 2026-01-05
 
 **Office hours for Gary:** TBD, Brogden 526
 
-**Office hours for João:** TBD, Brogden
+**Office hours for João:** Monday 10-11AM, Brogden 517
 
 **Syllabus:** [Class syllabus](../grad_methods_syllabus.pdf)
 
