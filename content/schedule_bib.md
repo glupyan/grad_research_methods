@@ -1,115 +1,108 @@
+
 # Class Schedule[^:1]
 
-I recommend reading the papers in the order in which they are listed.
+We recommend reading the papers in the order in which they are listed.
 
 [^:1]: Subject to revision
 
-# `r advdate(wed, 1)`
+## `r advdate(lecture, 1)` _The scientific method as it pertains to psychology_
 
-### What is learnable?
+* **Readings (in class):** @feynmanCargoCultScience1974; @forscherChaosBrickyard1963; 
 
-* **Readings (in class):** @suttonBitterLesson2019; @WhatIntelligenceAntikythera; 
-* *Related resources*: @halevyUnreasonableEffectivenessData2009; [talk by Alyosha Efros](https://youtube.com/watch?v=R7qy2BY6mTk&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=32&pp=iAQB)
+### `r advdate(section, 1)`
+* **Read for section**: @cohenEarthP; @gelmanInterrogatingCargoCult2025; [Experimentology: Primer on research ethics](https://experimentology.io/004-ethics.html)
+
+## `r advdate(lecture, 2)` _Experiments, causality, and the two disciplines of psychology_
+
+* **Readings:** [Experimentology: Experiments & causal inference](https://experimentology.io/001-experiments.html); [Experimentology: How data inform theoretical constructs](https://experimentology.io/002-theories.html); @cronbachTwoDisciplinesScientific1957
+
+### `r advdate(section, 2)`
+* When should we (not) do experiments? A discussion of what (non)experimental methods can and can't tell us.
 
 
-# `r advdate(wed, 2)`
+## `r advdate(lecture, 3)` _Measurement: Validity, reliability, the reliability paradox_
 
-### How do LLMs work?
+* **Readings:** [Experimentology: Measurement](https://experimentology.io/008-measurement.html); @westfallStatisticallyControllingConfounding2016; @hedgeReliabilityParadoxWhy2018; @zorowitzImprovingReliabilityCognitive2023
 
-* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022. 
-* **Other resources for understanding transformers (very useful; strongly recommended!)**: 
-[The illustrated transformer](https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com); [Transformers, the tech behind LLMs video](https://www.youtube.com/watch?v=wjZofJX0v4M&ab_channel=3Blue1Brown) and the [next chapter focusing on attention](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown); 
-* Extra: @mccoyEmbersAutoregressionShow2024
+* Extra: @sijtsmaUseMisuseVery2009; @cortinaAlphaOmegaLook2020; 
 
-# `r advdate(wed, 3)`
+### `r advdate(section, 3)`
+* Assignment 1: With a partner, prepare a short (~5 minute) presentation on the challenges in establishing one of the discussed types of validity in your ongoing research.
 
-### Learning language from language
 
-**Special guest** - Steven Piantadosi
+## `r advdate(lecture, 4)` _Sampling, power, and effect sizes_
 
-* **Readings:** @elman_finding_1990; @boleda_distributional_2020; @piantadosiModernLanguageModels2024 
+* **Readings:** [Experimentology: Sampling](https://experimentology.io/010-sampling.html); @funderEvaluatingEffectSize2019; [Smallest Effect Size of Interest](https://daniellakens.blogspot.com/2017/05/how-power-analysis-implicitly-reveals.html)
 
-# `r advdate(wed, 4)`
+* Extra: @wagenmakersPracticalSolutionPervasive2007; @lovakovEmpiricallyDerivedGuidelines2021; @marekReproducibleBrainwideAssociation2022
 
-### Learning about the world from language 
+### `r advdate(section, 4)`
+TBD
 
-**Special guest** - Marina Bedny
+## `r advdate(lecture, 5)` _Experimental Design 1: Design basics; the ergodic fallacy_
 
-* **Readings:** [Plato: The allegory of the cave](https://scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf); @lupyan_words-as-mappings_2017; @yildirimTaskStructuresWorld2024; @wangConstructingMeaningLanguageforthcoming
+* **Readings:** [Experimentology: Design](https://experimentology.io/009-design.html); @speelmanStatementsPervasivenessBehavior2020
 
-* Recommended: response to Yildirim and Paul: @godduLLMsDontKnow2024; Counter-response: @yildirimResponseGodduNew2024
+* Extra: @speelmanMostPsychologicalResearchers2024; @rouderPsychometricsIndividualDifferences2019
 
-# `r advdate(wed, 5)` 
+### `r advdate(section, 5)`
+TBD
 
-### Do large language models understand us?
+## `r advdate(lecture, 6)` _Data management best practices_
+* **Readings:** [Experimentology: Project management](https://experimentology.io/013-management.html); @wilkinsonFAIRGuidingPrinciples2016
 
-* **Readings:** @mitchell_debate_2023; @aguerayarcasLargeLanguageModels2022; @piantadosi_meaning_2022
-* **Short reflection essay**: So what do you think? Do large language models understand us? (~800 words).
-* Extra: Feel free to also browse the talks in [this series organized by Stevan Harnad](https://skywritingspress.ca/), e.g., the [different kinds of understanding by Chalmers](https://www.youtube.com/watch?v=yyRzTL201zI&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=24&pp=iAQB). 
+### `r advdate(section, 6)`
+TBD
 
-# `r advdate(wed, 6)` 
+## `r advdate(lecture, 7)` _Experimental Design 2: Participant consent & recruitment; counterbalancing; instructions; data quality checks_
 
-### Stress testing embodiment
-* Lots of reading this week! 
-* **Readings:** @barsalou_perceptual_1999; @mollo_vector_2023; @pavlickSymbolsGroundingLarge2023
-* Extra: [A philosophical take by David Chalmers on the possibility of "pure thinkers"](https://philpapers.org/archive/CHADTR.pdf)
+* **Readings:** [Experimentology: Data collection](https://experimentology.io/012-collection.html); @westwoodPotentialExistentialThreat2025
 
-# `r advdate(wed, 7)` 
+### `r advdate(section, 7)`
+* Practice with designing effective data quality checks
 
-### Stress testing the language of thought hypothesis: learning to learn and represent
+## `r advdate(lecture, 8)` _Experimental Design 3: Introduction to some common behavioral methods_
 
-* **Readings:** @quilty-dunn_best_2022 (also read at least 2 positive and 2 negative commentaries); @lakeHumanlikeSystematicGeneralization2023; Watch [this talk on learning compositionality by Pavlick](https://www.youtube.com/watch?v=6gSYMX3I5Bs&ab_channel=KempnerInstituteatHarvardUniversity)
-* Extra: @griffithsWhitherSymbolsEra2025; @binzMetalearnedModelsCognition2024; 
+* **Readings:** Skim through these, pausing on what most interests you: @bowerExperimentalMethodsCognitive1989; @leekAdaptiveProceduresPsychophysical2001; the first chapter or two of @macmillanDetectionTheoryUsers2005
 
-# `r advdate(wed, 8)` 
+### `r advdate(section, 8)`
+* TBD
 
-### Stress testing numerical cognition
+## `r advdate(lecture, 9)` _Quantifying Qualitative Data_
 
-* **Readings:** @leslie2008generative; @banerjeeChildrensArithmeticSkills2025; @oshaughnessyDiverseMathematicalKnowledge2023; @nandaProgressMeasuresGrokking2023 (don't worry about all the technical details. Focus on the big picture. The authors do have a useful [video walkthrough](https://www.youtube.com/watch?v=IHikLL8ULa4&ab_channel=NeelNanda)).
-* Extra: @gordon_numerical_2004; @oshaughnessy2019cultural; 
+* **Readings:** TBD (Content Analysis of Free response data; Behavioral coding; Use of LLMs in data-coding
 
-# `r advdate(wed, 9)` 
+### `r advdate(section, 9)`
+* TBD
 
-### Stress testing reasoning: the role of context
+## `r advdate(lecture, 10)` _Non-Experimental Design 1: Surveys; Item Response Theory; Propensity score matching_
 
-* **Readings:** @evans_dual-processing_2008; @lampinenLanguageModelsHumans2024
+* **Readings:** TBD
 
-# `r advdate(wed, 10)` 
+### `r advdate(section, 10)`
+* Spring Break. Enjoy!
 
-* **No Readings for this week** Work on project pitches. Post preliminary ideas on Canvas. Individual meetings to discuss the ideas w/ Gary during class.
+## `r advdate(lecture, 11)` _Spring Break. Enjoy!_
 
-# `r advdate(wed, 11)` 
+## `r advdate(lecture, 12)` _Non-Experimental Methods 2: Longitudinal & In-the-Wild Data_
 
-### Stress testing methodology of cognitive psychology/cognitive (neuro)science
+* **Readings:** TBD; @goldstone_discovering_2016
 
-* **Readings:** 
-@bowerExperimentalMethodsCognitive1989 (read or skim depending on your level of familiarity); @jonasCouldNeuroscientistUnderstand2017; Read 2 of the 12 case studies from @lindsey+BiologyLargeLanguage
-* Extras: @nickelsSingleCaseStudies2022; @yarkoniGeneralizabilityCrisis2020
+### `r advdate(section, 12)`
+* TBD
 
-# `r advdate(wed, 12)` 
+## `r advdate(lecture, 13)` _Meta-Analysis_
 
-### Stress testing theories of intelligence
+* **Readings:** [Experimentology: Meta-Analysis](https://experimentology.io/016-meta.html); TBD
 
-**Special guest** - Blaise Aguera y Arcas 
+### `r advdate(section, 13)`
+* TBD
 
-* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12 in the PDF or the updated mildly interactive version [online](https://whatisintelligence.antikythera.org/chapter-10/#periodization)).
-* Extras: @szathmary_major_1995; @van_der_maas_dynamical_2006
+## `r advdate(lecture, 14)` _Putting it all together: Maximizing knowledge gain_
 
-# `r advdate(wed, 13)` 
+* **Readings:** @yarkoniGeneralizabilityCrisis2020; @giner-sorollaCrisisEvidenceCrisis2019
 
-### Thanksgiving - no class
+### `r advdate(section, 14)`
+* TBD
 
-* **Project proposals due** by 8pm.
-
-# `r advdate(wed, 14)` 
-
-### Revisiting old and new questions
-
-* **Readings:** Review previous readings in light of what you've learned
-* **Short reflection essay**: Is all the AI madness of the last few years good for or bad for understanding the human mind? (~800 words).
-
-# `r advdate(wed, 15)` 
-
-### Final presentations
-
-### Group project presentations [20 min presentation + 8 min Q&A].
+## `r advdate(lecture, 15)` _Final presentations_

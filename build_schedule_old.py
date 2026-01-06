@@ -2,10 +2,8 @@
 """
 build_schedule.py (v13)
 
-- Expands date macros:
-    * legacy: `r advdate(wed, 2)` or advdate(wed, 2) (Wednesdays), starting from --start
-    * new: `r advdate(lecture, 2)` / `r advdate(section, 2)` (Wednesdays/Mondays), using base dates
-      parsed from the markdown (lecture <- as.Date("YYYY-MM-DD"), section <- as.Date("YYYY-MM-DD")).
+- Expands date macros for Wednesdays: handles both backticked inline R code
+  like: `r advdate(wed, 2)` and bare: advdate(wed, 2), starting from --start.
 - Replaces @keys with clickable/hoverable popovers containing APA-style HTML
   references (DOI/URL clickable) and a "Copy reference" button (plain-text APA).
 - In-text citation label is APA-style: "Author (Year)".
@@ -289,89 +287,20 @@ def inject_popovers(md: str, citations: Dict[str, Tuple[str,str,str]]) -> str:
     return md
 
 # ---------------- Date preprocessor ----------------
-# Match inline R-style code:
-#   `r advdate(wed, 2)`          (legacy)
-#   `r advdate(lecture, 2)`      (new; Wednesdays)
-#   `r advdate(section, 2)`      (new; Mondays)
-#
-# Also support bare: advdate(...)
-
-# --- legacy (still supported) ---
-DATE_INLINE_WED = re.compile(r"`r\s+advdate\s*\(\s*wed\s*,\s*(\d+)\s*\)`", re.IGNORECASE)
-DATE_BARE_WED   = re.compile(r"\badvdate\s*\(\s*wed\s*,\s*(\d+)\s*\)", re.IGNORECASE)
-
-# --- new (lecture/section) ---
-DATE_INLINE_LECTURE = re.compile(r"`r\s+advdate\s*\(\s*lecture\s*,\s*(\d+)\s*\)`", re.IGNORECASE)
-DATE_BARE_LECTURE   = re.compile(r"\badvdate\s*\(\s*lecture\s*,\s*(\d+)\s*\)", re.IGNORECASE)
-
-DATE_INLINE_SECTION = re.compile(r"`r\s+advdate\s*\(\s*section\s*,\s*(\d+)\s*\)`", re.IGNORECASE)
-DATE_BARE_SECTION   = re.compile(r"\badvdate\s*\(\s*section\s*,\s*(\d+)\s*\)", re.IGNORECASE)
-
-# CHANGE: parse lecture/section base dates directly from the markdown when present
-BASE_DATE_LECTURE = re.compile(
-    r"^\s*lecture\s*<-\s*as\.Date\(\s*\"(\d{4}-\d{2}-\d{2})\"\s*\)",
-    re.IGNORECASE | re.MULTILINE,
-)
-BASE_DATE_SECTION = re.compile(
-    r"^\s*section\s*<-\s*as\.Date\(\s*\"(\d{4}-\d{2}-\d{2})\"\s*\)",
-    re.IGNORECASE | re.MULTILINE,
-)
+# Match inline R-style code: `r advdate(wed, 2)`
+DATE_INLINE = re.compile(r"`r\s+advdate\s*\(\s*wed\s*,\s*(\d+)\s*\)`", re.IGNORECASE)
+# Also support bare advdate(wed, 2)
+DATE_BARE   = re.compile(r"\badvdate\s*\(\s*wed\s*,\s*(\d+)\s*\)", re.IGNORECASE)
 
 def format_date_from_n(n: int, start_dt: datetime) -> str:
-    """Legacy formatter for advdate(wed, n): full 'Week n (Wednesday, Month Day, Year)'."""
     dt = start_dt + timedelta(days=7*(n-1))
     pretty = dt.strftime("%A, %B ") + str(dt.day) + dt.strftime(", %Y")
     return f"Week {n} ({pretty})"
 
-# CHANGE: new formatters to mirror the Rmd's advdate() helper (mm/dd + fixed weekday labels)
-def _format_lecture_from_n(n: int, lecture_dt: datetime) -> str:
-    dt = lecture_dt + timedelta(days=7*(n-1))
-    return f"Week {n:02d}, Wednesday, {dt.strftime('%m/%d')}"
-
-def _format_section_from_n(n: int, section_dt: datetime) -> str:
-    dt = section_dt + timedelta(days=7*(n-1))
-    return f"Section: Monday, {dt.strftime('%m/%d')}"
-
-# CHANGE: extract base dates from markdown (fallbacks preserve old CLI behavior)
-def _extract_base_dates(md: str, start_dt: datetime) -> Tuple[datetime, datetime]:
-    """Return (lecture_dt, section_dt) datetimes with tzinfo.
-
-    - If lecture/section base dates exist in the markdown (e.g. in an R setup chunk),
-      we use them.
-    - Otherwise:
-        * lecture_dt falls back to start_dt (legacy --start behavior)
-        * section_dt falls back to the next Monday after lecture_dt
-          (so Wednesday lecture start -> following Monday section start)
-    """
-    lecture_dt = start_dt
-    m = BASE_DATE_LECTURE.search(md)
-    if m:
-        lecture_dt = datetime.strptime(m.group(1), "%Y-%m-%d").replace(tzinfo=start_dt.tzinfo)
-
-    m2 = BASE_DATE_SECTION.search(md)
-    if m2:
-        section_dt = datetime.strptime(m2.group(1), "%Y-%m-%d").replace(tzinfo=start_dt.tzinfo)
-    else:
-        # days until next Monday (weekday 0)
-        section_dt = lecture_dt + timedelta(days=(0 - lecture_dt.weekday()) % 7)
-
-    return lecture_dt, section_dt
-
 def preprocess_dates(md: str, start_dt: datetime) -> str:
-    lecture_dt, section_dt = _extract_base_dates(md, start_dt)
-
-    # CHANGE: expand new lecture/section shortcodes
-    md = DATE_INLINE_LECTURE.sub(lambda m: _format_lecture_from_n(int(m.group(1)), lecture_dt), md)
-    md = DATE_BARE_LECTURE.sub(lambda m: _format_lecture_from_n(int(m.group(1)), lecture_dt), md)
-    md = DATE_INLINE_SECTION.sub(lambda m: _format_section_from_n(int(m.group(1)), section_dt), md)
-    md = DATE_BARE_SECTION.sub(lambda m: _format_section_from_n(int(m.group(1)), section_dt), md)
-
-    # legacy: keep supporting wed shortcodes
-    md = DATE_INLINE_WED.sub(lambda m: format_date_from_n(int(m.group(1)), start_dt), md)
-    md = DATE_BARE_WED.sub(lambda m: format_date_from_n(int(m.group(1)), start_dt), md)
-
+    md = DATE_INLINE.sub(lambda m: format_date_from_n(int(m.group(1)), start_dt), md)
+    md = DATE_BARE.sub(lambda m: format_date_from_n(int(m.group(1)), start_dt), md)
     return md
-
 
 # ---------------- Main ----------------
 def main(inp: str, outp: str, bib_path: str, tz: str, start: str):

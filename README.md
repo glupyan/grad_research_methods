@@ -1,4 +1,4 @@
-# Grad Research Methods — Module-free Hugo/blogdown Site
+# Psych Research Methods — Module-free Hugo/blogdown Site
 
 ## Build locally (R)
 
