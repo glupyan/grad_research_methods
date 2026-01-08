@@ -30,20 +30,20 @@ We recommend reading the papers in the order in which they are listed.
 * Assignment 1: With a partner, prepare a short (~5 minute) presentation on the challenges in establishing one of the discussed types of validity in your ongoing research.
 
 
-## `r advdate(lecture, 4)` _Sampling, power, and effect sizes_
-
-* **Readings:** [Experimentology: Sampling](https://experimentology.io/010-sampling.html); @funderEvaluatingEffectSize2019; [Smallest Effect Size of Interest](https://daniellakens.blogspot.com/2017/05/how-power-analysis-implicitly-reveals.html)
-
-* Extra: @wagenmakersPracticalSolutionPervasive2007; @lovakovEmpiricallyDerivedGuidelines2021; @marekReproducibleBrainwideAssociation2022
-
-### `r advdate(section, 4)`
-TBD
-
-## `r advdate(lecture, 5)` _Experimental Design 1: Design basics; the ergodic fallacy_
+## `r advdate(lecture, 4)` _Experimental Design 1: Design basics; the ergodic fallacy_
 
 * **Readings:** [Experimentology: Design](https://experimentology.io/009-design.html); @speelmanStatementsPervasivenessBehavior2020
 
 * Extra: @speelmanMostPsychologicalResearchers2024; @rouderPsychometricsIndividualDifferences2019
+
+### `r advdate(section, 4)`
+TBD
+
+## `r advdate(lecture, 5)` _Sampling, power, and effect sizes_
+
+* **Readings:** [Experimentology: Sampling](https://experimentology.io/010-sampling.html); @funderEvaluatingEffectSize2019; [Smallest Effect Size of Interest](https://daniellakens.blogspot.com/2017/05/how-power-analysis-implicitly-reveals.html)
+
+* Extra: @wagenmakersPracticalSolutionPervasive2007; @lovakovEmpiricallyDerivedGuidelines2021; @marekReproducibleBrainwideAssociation2022
 
 ### `r advdate(section, 5)`
 TBD
@@ -100,7 +100,7 @@ TBD
 
 ## `r advdate(lecture, 14)` _Putting it all together: Maximizing knowledge gain_
 
-* **Readings:** @yarkoniGeneralizabilityCrisis2020; @giner-sorollaCrisisEvidenceCrisis2019
+* **Readings:** @yarkoniGeneralizabilityCrisis2020; @giner-sorollaCrisisEvidenceCrisis2019; @rozinWhatKindEmpirical2009
 
 ### `r advdate(section, 14)`
 * TBD
