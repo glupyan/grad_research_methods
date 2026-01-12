@@ -70,15 +70,14 @@ TBD
 
 ## Week 09, Wednesday, 03/18 _Quantifying Qualitative Data_
 
-* **Readings:** <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Charlesworth, T. E. S., Ghate, K., Caliskan, A., &amp;amp; Banaji, M. R. (2024). Extracting intersectional stereotypes from embeddings: Developing and validating the Flexible Intersectional Stereotype Extraction Procedure. &lt;em&gt;PNAS Nexus&lt;/em&gt;, &lt;em&gt;3&lt;/em&gt;(3), pgae089. &lt;a href=&quot;https://doi.org/10.1093/pnasnexus/pgae089&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1093/pnasnexus/pgae089&lt;/a&gt;" data-plain="Charlesworth, T. E. S., Ghate, K., Caliskan, A., &amp;amp; Banaji, M. R. (2024). Extracting intersectional stereotypes from embeddings: Developing and validating the Flexible Intersectional Stereotype Extraction Procedure. PNAS Nexus, 3(3), pgae0989. https://doi.org/10.1093/pnasnexus/pgae089">Charlesworth et al. (2024)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Arseniev-Koehler, A. (2024). Theoretical Foundations and Limits of Word Embeddings: What Types of Meaning can They Capture? &lt;em&gt;Sociological Methods &amp;amp; Research&lt;/em&gt;, &lt;em&gt;53&lt;/em&gt;(4), 1753–1793. &lt;a href=&quot;https://doi.org/10.1177/0049124122114014&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1037/h0031322&lt;/a&gt;" data-plain="Arseniev-Koehler, A. (2024). Theoretical Foundations and Limits of Word Embeddings: What Types of Meaning can They Capture? Sociological Methods &amp;amp; Research, 53(4), 1753–1793. https://doi.org/10.1177/0049124122114014">Arseniev-Koehler (2024)</a>
-
+* **Readings:** TBD (Content Analysis of Free response data; Behavioral coding; Use of LLMs in data-coding
 
 ### Section: Monday, 03/23
 * TBD
 
 ## Week 10, Wednesday, 03/25 _Non-Experimental Design 1: Surveys; Item Response Theory; Propensity score matching_
 
-* **Readings:** <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Reise, S. P. &amp;amp; Waller, N. G. (2009). Item Response Theory and Clinical Measurement. &lt;em&gt;Annual Review of Clinical Psychology&lt;/em&gt;, &lt;em&gt;5&lt;/em&gt;(1), 27-48. &lt;a href=&quot;https://doi.org/10.1093/pnasnexus/pgae089&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1146/annurev.clinpsy.032408.153553&lt;/a&gt;" data-plain="Reise, S. P. &amp;amp; Waller, N. G. (2009). Item Response Theory and Clinical Measurement. Annual Review of Clinical Psychology, 5(`), 27-48. https://doi.org/10.1146/annurev.clinpsy.032408.153553">Reise &amp;amp; Waller (2009)</a>; <a href="javascript:void(0)" class="cite-pop" role="button" tabindex="0" data-ref="Clark, L. A., &amp;amp; Watson, D. (1995). Constructing Validity: Basic Issues in Objective Scale Development. &lt;em&gt;Psychological Assessment&lt;/em&gt;, &lt;em&gt;7&lt;/em&gt;(3), 309-319. &lt;a href=&quot;https://doi.org/10.1037/14805-012&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://doi.org/10.1037/14805-012&lt;/a&gt;" data-plain="Clark, L. A., &amp;amp; Watson, D. (1995). Constructing Validity: Basic Issues in Objective Scale Development. Psychological Assessment, 7(3), 309-319. https://doi.org/10.1037/14805-012">Clark &amp;amp; Watson (1995)</a>
+* **Readings:** TBD
 
 ### Section: Monday, 03/30
 * Spring Break. Enjoy!

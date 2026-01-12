@@ -58,6 +58,8 @@ TBD
 
 * **Readings:** [Experimentology: Data collection](https://experimentology.io/012-collection.html); @westwoodPotentialExistentialThreat2025
 
+* Extra: @kayWhyYouShouldnt2025
+
 ### `r advdate(section, 7)`
 * Practice with designing effective data quality checks
 
@@ -70,14 +72,14 @@ TBD
 
 ## `r advdate(lecture, 9)` _Quantifying Qualitative Data_
 
-* **Readings:** TBD (Content Analysis of Free response data; Behavioral coding; Use of LLMs in data-coding
+* **Readings:** @charlesworthExtractingIntersectionalStereotypes2024; TBD 
 
 ### `r advdate(section, 9)`
 * TBD
 
 ## `r advdate(lecture, 10)` _Non-Experimental Design 1: Surveys; Item Response Theory; Propensity score matching_
 
-* **Readings:** TBD
+* **Readings:** @reiseItemResponseTheory2009; @clarkConstructingValidityBasic2016
 
 ### `r advdate(section, 10)`
 * Spring Break. Enjoy!
