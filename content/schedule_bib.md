@@ -16,7 +16,7 @@ We recommend reading the papers in the order in which they are listed.
 * **Readings:** [Experimentology: Experiments & causal inference](https://experimentology.io/001-experiments.html); [Experimentology: How data inform theoretical constructs](https://experimentology.io/002-theories.html); @cronbachTwoDisciplinesScientific1957
 
 ### `r advdate(section, 2)`
-* When should we (not) do experiments? A discussion of what (non)experimental methods can and can't tell us.
+* Read @Smaldino2017ModelsStupid; discussion of when should we (not) do experiments? A discussion of what (non)experimental methods can and can't tell us. What are good uses of modeling?
 
 
 ## `r advdate(lecture, 3)` _Measurement: Validity, reliability, the reliability paradox_
@@ -104,6 +104,6 @@ TBD
 * **Readings:** @yarkoniGeneralizabilityCrisis2020; @giner-sorollaCrisisEvidenceCrisis2019; @rozinWhatKindEmpirical2009
 
 ### `r advdate(section, 14)`
-* TBD
+* Workshopping your final presentations
 
 ## `r advdate(lecture, 15)` _Final presentations_
